@@ -1,7 +1,12 @@
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import './globals.css'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
+const client = new ApolloClient({
+  uri: 'https://api-eu-west-2.hygraph.com/v2/clkwe2leq041o01uk4rcv91js/master',
+  cache: new InMemoryCache(),
+});
 
 export const metadata = {
   title: 'Create Next App',
