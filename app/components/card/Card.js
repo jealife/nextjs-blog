@@ -6,7 +6,7 @@ export default function Card() {
     return (
         <div className="card">
             <div className="card__header">
-                <img src="https://source.unsplash.com/600x400/?computer" alt="card__image" className="card__image img" width="600" />
+                <img src="https://source.unsplash.com/1500/?computer" alt="card__image" className="card__image img" width="600" />
             </div>
             <div className="card__body">
                 <span className="tag tag-blue">Technology</span>
