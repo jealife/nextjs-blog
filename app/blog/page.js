@@ -13,9 +13,9 @@ export default function Blog() {
       <div className='cards'>
         <div className='container'>
 
-          <Card />
-          <Card />
-          <Card />
+          <Card num="1000" />
+          <Card num="1001"/>
+          <Card num="1002"/>
 
         </div>
       </div>

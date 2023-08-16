@@ -17,7 +17,13 @@
     gap: 2rem;
 }
 
-.img {
+.card__header img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+    height: 250px;
+}
+.user img {
     max-width: 100%;
     display: block;
     object-fit: cover;

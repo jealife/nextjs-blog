@@ -2,11 +2,13 @@ import React from 'react'
 import './card.css'
 
 
-export default function Card() {
+export default function Card({num}) {
+    let src='https://unsplash.it/'+num;
+
     return (
         <div className="card">
             <div className="card__header">
-                <img src="https://unsplash.it/1502" alt="card__image" className="card__image img" width="600" />
+                <img src={src} alt="card__image" className="card__image img" width="600" />
             </div>
             <div className="card__body">
                 <span className="tag tag-blue">Technology</span>

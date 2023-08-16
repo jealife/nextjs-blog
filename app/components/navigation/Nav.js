@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { Navigation } from './Navigation'
 import './nav.css'
 import Link from 'next/link'
-import SignUpLink from './SignUpLink'
+// import SignUpLink from './SignUpLink'
 
 const navLinks = [
   { name: 'Accueil', href: '/' },
@@ -12,7 +12,7 @@ const navLinks = [
 ]
 
 function Nav() {
-  const [isAuth,setisAuth]=useState(false)
+  const [isAuth, setisAuth] = useState(false)
   return (
     <nav>
       <div className="logo">
@@ -23,7 +23,8 @@ function Nav() {
       </menu>
 
       <div className='btn_nav'>
-        <SignUpLink setisAuth={setisAuth} />
+        <Link href='/login' className='btn_link'>Sign in
+        </Link>
       </div>
     </nav>
   )
