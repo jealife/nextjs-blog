@@ -1,8 +1,9 @@
 import React from 'react'
 import './blog.css'
-import '../../lib/db'
+import '../../lib/firebase-config'
 import Card from '../components/card/Card'
-import  firebaseapp from '../../lib/db'
+import  firebaseapp from '../../lib/firebase-config'
+
 
 export default function Blog() {
   return (

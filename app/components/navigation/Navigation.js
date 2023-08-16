@@ -16,7 +16,7 @@ export default function Navigation() {
         </div>
 
         <div className={style.btn_nav}>
-          <Link className={style.btn_link} href="/">Login</Link>
+          <Link className={style.btn_link} href="/login">Login</Link>
           <Link className={style.btn_link} href="/">Sign UP</Link>
         </div>
 
