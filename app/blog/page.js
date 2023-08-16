@@ -1,14 +1,20 @@
 import React from 'react'
 import './blog.css'
-import '../Firebase/fireBaseinit'
+import '../../lib/db'
 import Card from '../components/card/Card'
-
+import  firebase from '../../lib/db'
 
 export default function Blog() {
   return (
     <main className="main">
       <div className='cards'>
-        <Card />
+        <div className='container'>
+
+          <Card />
+          <Card />
+          <Card />
+
+        </div>
       </div>
     </main>
   )
