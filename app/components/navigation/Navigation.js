@@ -15,6 +15,11 @@ export default function Navigation() {
             <Link href="/blog">Blog</Link>
         </div>
 
+        <div className={style.btn_nav}>
+          <Link className={style.btn_link} href="/">Login</Link>
+          <Link className={style.btn_link} href="/">Sign UP</Link>
+        </div>
+
     </nav>
   )
 }

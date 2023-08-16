@@ -1,5 +1,5 @@
 import React from 'react'
-import './card.module.css'
+import './card.css'
 
 
 export default function Card() {
