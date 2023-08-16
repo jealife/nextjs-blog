@@ -1,13 +1,22 @@
 import React from 'react';
 import './login.css'
+import {auth,provider} from '../../lib/firebase-config'
+import {signInWithPopup} from 'firebase/auth'
 
 
-const Login = () => {
+const Login = ({setisAuth}) => {
+    const signInWithPopup=()=>{
+        signInWithPopup(auth,provider).then((result)=>{
+
+        })
+    }
     return (
-        <main className="main">
+        <main className="main login-page">
             <h1>
-                Login with Google to conti nue
+                Login with Google to continue
             </h1>
+
+
         </main>
     )
 }

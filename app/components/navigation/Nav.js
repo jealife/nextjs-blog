@@ -1,6 +1,10 @@
+'use client'
+import { useState } from 'react'
 import { Navigation } from './Navigation'
 import './nav.css'
 import Link from 'next/link'
+
+
 
 const navLinks = [
   { name: 'Accueil', href: '/' },
@@ -8,6 +12,7 @@ const navLinks = [
 ]
 
 function Nav() {
+  cons [isAuth,setisAuth]=useState(flase)
   return (
     <nav>
       <div className="logo">
