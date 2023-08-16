@@ -2,7 +2,7 @@ import React from 'react'
 import './blog.css'
 import '../../lib/db'
 import Card from '../components/card/Card'
-import  firebase from '../../lib/db'
+import  firebaseapp from '../../lib/db'
 
 export default function Blog() {
   return (
