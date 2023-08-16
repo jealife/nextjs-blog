@@ -1,7 +1,7 @@
 import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navigation from './navigation/Navigation'
+import Navigation from './components/navigation/Navigation'
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
