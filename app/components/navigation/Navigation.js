@@ -1,26 +1,28 @@
-// 'Use client'
-import React from 'react'
+'use client'
+
+import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-// import NavLink from './NavLink'
-import style from './nav.module.css'
+import './nav.css'
+export function Navigation({ navLinks }) {
+  const pathname = usePathname()
 
-export default function Navigation() {
   return (
-    <nav className={style.nav}>
-        <div className="logo">
-        <Link href="/">Logo</Link>
-        </div>
-        <div className={style.menu}> 
-            <Link href="/">Home</Link>
-            <Link href="/blog">Blog</Link>
-        </div>
+    <>
+      {navLinks.map((link) => {
+        const isActive = pathname === link.href
 
-        <div className={style.btn_nav}>
-          <Link className={style.btn_link} href="/login">Login</Link>
-          <Link className={style.btn_link} href="/">Sign UP</Link>
-        </div>
+        return (
 
-    </nav>
+          <Link
+            className={isActive ? 'active' : ''}
+            href={link.href}
+            key={link.name}
+          >
+            {link.name}
+
+          </Link>
+        )
+      })}
+    </>
   )
 }
-

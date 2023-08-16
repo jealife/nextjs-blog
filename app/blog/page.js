@@ -1,9 +1,11 @@
 import React from 'react'
 import './blog.css'
-import '../../lib/firebase-config'
 import Card from '../components/card/Card'
-import  firebaseapp from '../../lib/firebase-config'
 
+export const metadata = {
+  title: 'Blog',
+  description: 'This is the Blog',
+}
 
 export default function Blog() {
   return (

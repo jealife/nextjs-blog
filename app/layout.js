@@ -1,12 +1,11 @@
-import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Navigation from './components/navigation/Navigation'
+import Nav from './components/navigation/Nav';
 
 const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Next blog',
-description: 'A blog create whith next js and FireBase',
+  description: 'A blog create whith next js and FireBase',
 }
 
 export default function RootLayout({ children }) {
@@ -15,7 +14,7 @@ export default function RootLayout({ children }) {
 
       <body className={inter.className}>
         <header>
-          <Navigation />
+          <Nav />
         </header>
         {children}
       </body>
