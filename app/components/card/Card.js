@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 export default function Card({num}) {
     let src='https://unsplash.it/'+num;
-
+    let src2="https://i.pravatar.cc/40?Image="+num;
     return (
         <div className="card">
             <div className="card__header">
@@ -18,7 +18,7 @@ export default function Card({num}) {
             </div>
             <div className="card__footer">
                 <div className="user">
-                    <img src="https://i.pravatar.cc/40?Image=1" alt="user__image" className="user__image Image"   />
+                    <img src={src2} alt="user__image" className="user__image Image"   />
                     <div className="user__info">
                         <h5>Jane Doe</h5>
                         <small>2h ago</small>
