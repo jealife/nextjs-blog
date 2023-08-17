@@ -1,3 +1,4 @@
+
 import { auth, googleAuthProvider } from '../../lib/firebase-config'
 
 export default function SignInButton() {

@@ -1,3 +1,4 @@
+
 import { auth } from '../../lib/firebase-config'
 
 export default function SignOutButton() {
