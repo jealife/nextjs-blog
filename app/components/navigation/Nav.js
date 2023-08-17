@@ -8,7 +8,7 @@ import Link from 'next/link'
 const navLinks = [
   { name: 'Accueil', href: '/' },
   { name: 'Blog', href: '/blog' },
-  { name: 'Profil', href: '/profile' },
+  { name: 'Dashboard', href: '/dashboard' },
 ]
 
 function Nav() {
