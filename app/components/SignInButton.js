@@ -1,5 +1,5 @@
 
-import { auth, googleAuthProvider } from '../../lib/firebase-config'
+import { getAut, googleAuthProvider } from '../../lib/firebase-config'
 
 export default function SignInButton() {
   const signInWithGoogle = async () => {

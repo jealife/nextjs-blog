@@ -9,16 +9,16 @@ export default function Card({num}) {
     return (
         <div className="card">
             <div className="card__header">
-                <Image src={src} alt="card__image" className="card__image Image" width="600" />
+                <img src={src} alt="card__image" className="card__image Image" width="600"  />
             </div>
             <div className="card__body">
                 <span className="tag tag-blue">Technology</span>
-                <h4>What's new in 2022 Tech</h4>
+                <h4>What&aposs new in 2022 Tech</h4>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus. Doloremque, nihil! At ea atque quidem!</p>
             </div>
             <div className="card__footer">
                 <div className="user">
-                    <Image src="https://i.pravatar.cc/40?Image=1" alt="user__image" className="user__image Image" />
+                    <img src="https://i.pravatar.cc/40?Image=1" alt="user__image" className="user__image Image"   />
                     <div className="user__info">
                         <h5>Jane Doe</h5>
                         <small>2h ago</small>
