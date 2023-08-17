@@ -1,13 +1,13 @@
 'use client';
-
+import './profile.css'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router'
 import { auth } from '../../lib/firebase-config'
-import SignOutButton from '../components/SignOutButton' 
+import SignOutButton from '../components/SignOutButton'
 
 export default function Dashboard() {
 
-  
+
   // const [user, setUser] = useState(null)
   // const router = useRouter()
 
@@ -26,10 +26,9 @@ export default function Dashboard() {
   // }
 
   return (
-    <div>
+
+    <main className="main">
       <h1>Dashboard</h1>
-      {/* <p>Welcome, {user.displayName}!</p> */}
-      <SignOutButton />
-    </div>
+    </main>
   )
 }

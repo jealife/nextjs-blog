@@ -1,5 +1,5 @@
 // 'use client';
-// import styles from './page.module.css'
+import styles from './page.module.css'
 // import { useState, useEffect } from 'react'
 // import { useRouter } from 'next/router'
 // import { auth } from '../lib/firebase-config'
@@ -26,7 +26,7 @@ export default function Home() {
     <main className={styles.main}>
       <h1>Home</h1>
 
-      {user ? <SignOutButton /> : <SignInButton />}
+      {/* {user ? <SignOutButton /> : <SignInButton />} */}
     </main>
   )
 }
